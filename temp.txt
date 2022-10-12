@@ -1,0 +1,2 @@
+0	Is	this	review	positive	?	Yes
+1	Is	this	review	positive	?	No
