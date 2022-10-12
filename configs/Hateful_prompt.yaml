@@ -1,0 +1,25 @@
+train_file: '/workspace/hateful_memes/ALBEF/train.json'
+val_file: '/workspace/hateful_memes/ALBEF/dev_unseen.json'                
+test_file: '/workspace/hateful_memes/ALBEF/test_seen.json'
+
+image_root: '/workspace/hateful_memes/img'
+
+image_res: 384
+batch_size_train: 24
+batch_size_test: 64 
+
+alpha: 0.4
+distill: False
+warm_up: False
+
+bert_config: '/workspace/project/ALBEF/configs/config_bert.json'
+
+optimizer: {opt: adamW, lr: 2e-5, weight_decay: 0.02}
+schedular: {sched: cosine, lr: 2e-5, epochs: 20, min_lr: 1e-6, decay_rate: 1, warmup_lr: 1e-5, warmup_epochs: 1, cooldown_epochs: 0}
+
+
+
+
+
+
+
